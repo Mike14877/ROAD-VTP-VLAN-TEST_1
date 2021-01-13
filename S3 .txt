@@ -1,0 +1,10 @@
+host S3
+
+int g0/1
+sw mode tr
+
+
+vtp mode cl
+vtp ver 2 
+vtp domain HR 
+Vtp pass HR 

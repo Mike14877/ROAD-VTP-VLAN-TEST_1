@@ -1,0 +1,24 @@
+host S1
+
+int g0/1
+sw mo tr
+
+vtp mode cl
+vtp ver 2 
+vtp domain Company 
+Vtp pass HR 
+
+int ra fa0/1-5 
+sw mo acc
+sw non 
+sw vlan 10 
+
+int ra fa0/6-10
+sw mo acc
+sw non 
+sw acc vlan 20
+
+int ra fa0/11-15
+sw mo acc
+sw non 
+sw acc vlan 30

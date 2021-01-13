@@ -1,0 +1,27 @@
+R1 
+int g0/0/0
+no sh
+int g0/0/0.10
+en dot1q 10
+ip add 10.10.1.254 255.255.255.0
+no sh
+
+int g0/0/0.20
+en dot1q 20
+ip add 10.20.1.254 255.255.255.0
+no sh
+
+
+int g0/0/0.30
+en dot1q 30
+ip add 10.30.1.254 255.255.255.0
+no sh
+ 
+
+int g0/0/1
+no sh
+int g0/0/0.40
+en dot1q 40
+ip add 10.2.1.254 255.255.255.0
+no sh
+

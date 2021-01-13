@@ -1,0 +1,1 @@
+switchport trunk encapsulation dot1q

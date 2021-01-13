@@ -1,0 +1,28 @@
+host S0
+
+int ra fa 0/21-24
+sw mo tr
+
+int ra g0/1-2
+sw mo tr
+
+vtp mo ser
+vtp ver 2 
+vtp do Company
+vtp pass HR
+
+
+vlan 10
+name HR
+int vlan 10
+ip add 10.10.1.10 255 255.255.0
+
+vlan 20
+name IT
+int vlan 20 
+ip add 10.20.1.10 255.255.255.0
+
+vlan 30
+name Sales
+int vlan 30
+ip add 10.30.1.10 255.255.255.0
